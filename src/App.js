@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import { Counter } from "./counter";
+import { CounterFC } from "./counterfc"
+import { Selector } from './selector';
+//import { SelectorFC } from './selectorfc';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Counter name="Class component counter" />
+      <CounterFC name="Functional component counter" />
+      <Selector name="Selector class component" />
+      {/* <SelectorFC name="Selector Functional component" /> */}
     </div>
   );
 }
